@@ -13,6 +13,9 @@
         "plugin:react/recommended"
     ],
     "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false
+    },
     "env": {
         "react-native/react-native": true
     },
