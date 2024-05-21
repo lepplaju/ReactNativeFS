@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   container: {
     paddingVertical: Constants.statusBarHeight,
     paddingLeft: 5,
-    backgroundColor: theme.colors.backgroundPrimary,
+    backgroundColor: theme.colors.backgroundSecondary,
   },
 });
 
@@ -14,7 +14,9 @@ const AppBar = () => {
   return (
     <View style={styles.container}>
       <Pressable>
-        <Text style={{ color: theme.colors.textSecondary }}>Repositories</Text>
+        <Text style={{ color: theme.colors.componentBackground }}>
+          Repositories
+        </Text>
       </Pressable>
     </View>
   );

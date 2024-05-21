@@ -2,9 +2,7 @@ import { FlatList, View, StyleSheet } from "react-native";
 import RepositoryItem from "./RepositoryItem";
 
 const styles = StyleSheet.create({
-  separator: {
-    height: 25,
-  },
+  separator: { height: 25 },
 });
 
 const repositories = [
@@ -52,17 +50,6 @@ const repositories = [
     reviewCount: 0,
     ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/13142323?v=4",
   },
-  {
-    id: "lmao",
-    fullName: "hello",
-    description: "test",
-    language: "nothing",
-    forksCount: 110,
-    stargazersCount: 55,
-    ratingAverage: 0,
-    reviewCount: 0,
-    ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/13142323?v=4",
-  },
 ];
 
 const ItemSeparator = () => <View style={styles.separator} />;
@@ -70,6 +57,7 @@ const ItemSeparator = () => <View style={styles.separator} />;
 const RepositoryList = () => {
   return (
     <FlatList
+      contentContainerStyle={{ paddingBottom: 100 }} // this ensures that the last item will be visible
       data={repositories}
       ItemSeparatorComponent={ItemSeparator}
       renderItem={({ item }) =>
