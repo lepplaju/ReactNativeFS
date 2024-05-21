@@ -1,13 +1,13 @@
 import Constants from "expo-constants";
-import { Text, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import RepositoryList from "./RepositoryList";
+import AppBar from "./AppBar";
 
 const styles = StyleSheet.create({
   container: {
     marginTop: Constants.statusBarHeight,
     flexGrow: 1,
     flexShrink: 1,
-    paddingHorizontal: 5,
   },
   title: {
     marginVertical: 25,
@@ -18,10 +18,31 @@ const styles = StyleSheet.create({
 const Main = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Rate Repository Application</Text>
-      <RepositoryList />
+      <AppBar />
+      <View style={{ paddingHorizontal: 5 }}>
+        <RepositoryList />
+      </View>
     </View>
   );
 };
 
 export default Main;
+
+// import Text from "./Text";
+// import FlexboxExample from "./FlexboxExample";
+
+// const Main = () => {
+//   return (
+//     <>
+//       <Text>Simple text</Text>
+//       <Text style={{ paddingVertical: 25 }}>Text with custom style</Text>
+//       <Text fontWeight="bold" fontSize="subheading">
+//         Bold subheading
+//       </Text>
+//       <Text color="primary" style={{ paddingBottom: 25 }}>
+//         Text with secondary color
+//       </Text>
+//       <FlexboxExample />
+//     </>
+//   );
+// };

@@ -52,6 +52,17 @@ const repositories = [
     reviewCount: 0,
     ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/13142323?v=4",
   },
+  {
+    id: "lmao",
+    fullName: "hello",
+    description: "test",
+    language: "nothing",
+    forksCount: 110,
+    stargazersCount: 55,
+    ratingAverage: 0,
+    reviewCount: 0,
+    ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/13142323?v=4",
+  },
 ];
 
 const ItemSeparator = () => <View style={styles.separator} />;
@@ -70,6 +81,7 @@ const RepositoryList = () => {
           item.stargazersCount,
           item.reviewCount,
           item.ratingAverage,
+          item.ownerAvatarUrl,
         )
       }
       // other props
