@@ -1,10 +1,17 @@
-// import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "expo-status-bar";
 // import { StyleSheet, Text, View } from 'react-native';
-import Main from './src/components/Main';
+import { NativeRouter } from "react-router-native";
+import Main from "./src/components/Main";
 
-const App= () => {
+const App = () => {
   return (
-    <Main/>
+    <>
+      
+      <NativeRouter>
+        <Main />
+      </NativeRouter>
+      <StatusBar style="auto" />
+    </>
   );
-}
-export default App; 
+};
+export default App;
