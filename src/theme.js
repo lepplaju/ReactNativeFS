@@ -5,7 +5,8 @@ const theme = {
     primary: '#0366d6',
     backgroundPrimary: '#e1e4e8',
     backgroundSecondary: '#185ead',
-    componentBackground: 'white'
+    componentBackground: 'white',
+    errorColor: "#d73a4a"
 
   },
   fontSizes: {
