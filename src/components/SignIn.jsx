@@ -46,7 +46,6 @@ const SignInForm = ({ onSubmit }) => {
 
   return (
     <View style={styles.container}>
-      <Text>The sign-in view</Text>
       <TextInput
         style={
           formik.touched.username && formik.errors.username
